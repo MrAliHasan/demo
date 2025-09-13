@@ -915,6 +915,70 @@ section {
     object-fit: cover;
 }
 
+/* Instruments Section */
+.instruments {
+    padding: var(--space-2xl) 0;
+    background: var(--secondary-dark);
+}
+
+.instruments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-xl);
+}
+
+.instrument-category {
+    background: var(--gradient-glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-xl);
+    padding: var(--space-lg);
+    transition: all 0.3s ease;
+}
+
+.instrument-category:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-blue);
+    box-shadow: var(--shadow-lg);
+}
+
+.instrument-category h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: var(--space-lg);
+    color: var(--accent-blue);
+    border-bottom: 2px solid var(--accent-blue);
+    padding-bottom: var(--space-sm);
+}
+
+.spec-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.spec-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    padding: var(--space-sm);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--accent-cyan);
+}
+
+.spec-item strong {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.spec-item span {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
 /* Technology Section */
 .technology {
     padding: var(--space-2xl) 0;
@@ -1022,36 +1086,89 @@ section {
     gap: var(--space-2xl);
 }
 
-.team-leader {
+.team-grid {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--space-xl);
-    align-items: start;
+    margin-bottom: var(--space-2xl);
+}
+
+.team-card {
     background: var(--gradient-glass);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-xl);
-    padding: var(--space-xl);
+    padding: var(--space-lg);
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
-.leader-image {
+.team-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-blue);
+    box-shadow: var(--shadow-lg);
+}
+
+.team-image {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    margin-bottom: var(--space-md);
 }
 
 .image-placeholder {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     background: var(--gradient-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
     box-shadow: var(--shadow-lg);
+}
+
+.team-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+    color: var(--text-primary);
+}
+
+.team-role {
+    font-size: 1rem;
+    color: var(--accent-blue);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+
+.team-description {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.credentials-highlight {
+    background: var(--gradient-primary);
+    border-radius: var(--radius-xl);
+    padding: var(--space-2xl);
+    text-align: center;
+    color: white;
+}
+
+.credentials-content h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+}
+
+.credentials-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .leader-info h3 {
@@ -1615,6 +1732,27 @@ section {
         grid-template-columns: 1fr;
     }
 
+    .instruments-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .instrument-category {
+        padding: var(--space-md);
+    }
+
+    .instrument-category h3 {
+        font-size: 1.2rem;
+    }
+
+    .spec-item strong {
+        font-size: 0.9rem;
+    }
+
+    .spec-item span {
+        font-size: 0.85rem;
+    }
+
     .product-content {
         grid-template-columns: 1fr;
         padding: var(--space-lg);
@@ -1676,38 +1814,38 @@ section {
         direction: ltr;
     }
 
-    .team-leader {
+    .team-grid {
         grid-template-columns: 1fr;
-        text-align: center;
-        padding: var(--space-lg);
         gap: var(--space-lg);
     }
 
-    .leader-info h3 {
-        font-size: 1.8rem;
-        margin-bottom: var(--space-sm);
+    .team-card {
+        padding: var(--space-md);
     }
 
-    .leader-title {
-        font-size: 1.1rem;
-        margin-bottom: var(--space-md);
+    .team-card h3 {
+        font-size: 1.2rem;
     }
 
-    .leader-bio {
-        font-size: 1rem;
-        line-height: 1.7;
-        text-align: left;
-        max-width: 100%;
+    .team-role {
+        font-size: 0.9rem;
     }
 
-    .leader-roles {
-        justify-content: center;
-        margin-bottom: var(--space-lg);
-    }
-
-    .role-badge {
+    .team-description {
         font-size: 0.85rem;
-        padding: 0.4rem 0.8rem;
+    }
+
+    .credentials-highlight {
+        padding: var(--space-lg);
+    }
+
+    .credentials-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .credentials-content p {
+        font-size: 1rem;
+        text-align: left;
     }
 
     .contact-content {
