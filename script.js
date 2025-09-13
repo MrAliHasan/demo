@@ -152,11 +152,11 @@ class AireChemistryApp {
             
             // Navbar background changes
             if (scrolled > 50) {
-                navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
                 navbar.style.backdropFilter = 'blur(25px)';
-                navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
+                navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
             } else {
-                navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
                 navbar.style.backdropFilter = 'blur(20px)';
                 navbar.style.boxShadow = 'none';
             }
