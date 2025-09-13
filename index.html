@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AireChemistry - AI-Powered Air Quality Monitoring Solutions | Leading Innovation in Environmental Technology</title>
+    <meta name="description" content="Revolutionary AI-powered air quality monitoring with 72-hour forecasting. Multi-sensor technology for municipalities, healthcare, and industry. Locally manufactured in South Africa.">
+    <meta name="keywords" content="air quality monitoring, AI forecasting, environmental sensors, pollution monitoring, South Africa">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">AireChemistry</div>
+            <div class="loading-spinner"></div>
+            <p>Initializing Air Quality Intelligence...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>AireChemistry</h2>
+                <span class="nav-tagline">AI-Powered Air Intelligence</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#solutions" class="nav-link">Solutions</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#technology" class="nav-link">Technology</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="btn-cta" onclick="scrollToSection('contact')">Get Quote</button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-slides">
+                <div class="hero-slide active" style="background-image: url('./Website pictures AireChemistry/urban-air-pollution-over-cityscape.jpg');">
+                    <div class="hero-overlay"></div>
+                </div>
+                <div class="hero-slide" style="background-image: url('./Website pictures AireChemistry/industrial-refinery-coastal-sunset-pollution.jpg');">
+                    <div class="hero-overlay"></div>
+                </div>
+                <div class="hero-slide" style="background-image: url('./Website pictures AireChemistry/industrial-refinery-night-pollution.jpg');">
+                    <div class="hero-overlay"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Next Generation</span>
+                        <span class="title-highlight">AI-Powered Air Quality</span>
+                        <span class="title-line">Monitoring Solutions</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Revolutionary multi-sensor technology with 72-hour AI forecasting, patent-pending alert systems, 
+                        and comprehensive environmental monitoring for municipalities, healthcare, and industry.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">72h</span>
+                            <span class="stat-label">AI Forecasting</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">360°</span>
+                            <span class="stat-label">Multi-directional</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Sensor Types</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="scrollToSection('solutions')">
+                            <i class="fas fa-rocket"></i>
+                            Explore Solutions
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                            <i class="fas fa-envelope"></i>
+                            Get Quote
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- <div class="hero-visual">
+                    <div class="technology-showcase-card">
+                        <div class="showcase-header">
+                            <h3>AI-Powered Monitoring Technology</h3>
+                            <span class="tech-badge">Next-Gen</span>
+                        </div>
+                        
+                        <div class="tech-features">
+                            <div class="tech-feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="feature-info">
+                                    <h4>72-Hour Forecasting</h4>
+                                    <p>Deep Learning AI Models</p>
+                                </div>
+                            </div>
+                            
+                            <div class="tech-feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-satellite-dish"></i>
+                                </div>
+                                <div class="feature-info">
+                                    <h4>Multi-Sensor Array</h4>
+                                    <p>15+ Environmental Parameters</p>
+                                </div>
+                            </div>
+                            
+                            <div class="tech-feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-solar-panel"></i>
+                                </div>
+                                <div class="feature-info">
+                                    <h4>Solar Powered</h4>
+                                    <p>Autonomous Operation</p>
+                                </div>
+                            </div>
+                            
+                            <div class="tech-feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-bell"></i>
+                                </div>
+                                <div class="feature-info">
+                                    <h4>Smart Alerts</h4>
+                                    <p>Patent-Pending Technology</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="nasa-credential">
+                            <i class="fas fa-rocket"></i>
+                            <span>Powered by NASA JPL Science Team</span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        
+        <!-- <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll to explore</span>
+        </div> -->
+    </section>
+
+    <!-- Problem Statement -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="problem-content">
+                <div class="problem-images">
+                    <div class="problem-grid">
+                        <div class="problem-image">
+                            <img src="./Website pictures AireChemistry/pollution-emotional-impact-child-tear.jpg" alt="Child affected by air pollution">
+                            <div class="image-overlay">
+                                <span>Human Impact</span>
+                            </div>
+                        </div>
+                        <div class="problem-image">
+                            <img src="./Website pictures AireChemistry/businessman-wearing-mask-air-pollution-cartoon.jpg" alt="Business professional wearing pollution mask">
+                            <div class="image-overlay">
+                                <span>Economic Cost</span>
+                            </div>
+                        </div>
+                        <div class="problem-image">
+                            <img src="./Website pictures AireChemistry/factory-smoke-stack-heavy-pollution.jpg" alt="Industrial emissions">
+                            <div class="image-overlay">
+                                <span>Industrial Challenge</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="problem-text">
+                    <h2>The Air Quality Crisis Demands Intelligent Solutions</h2>
+                    <p class="lead">
+                        Traditional monitoring fails to provide the predictive intelligence needed for proactive environmental management. 
+                        Communities suffer from delayed responses, incomplete data, and ineffective alert systems.
+                    </p>
+                    
+                    <div class="crisis-stats">
+                        <div class="crisis-stat">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div>
+                                <strong>7 million</strong>
+                                <span>deaths annually from air pollution</span>
+                            </div>
+                        </div>
+                        <div class="crisis-stat">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <strong>$150 billion</strong>
+                                <span>economic impact in Africa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Revolutionary Air Quality Intelligence</h2>
+                <p>Unprecedented accuracy and forecasting capabilities that transform environmental monitoring</p>
+            </div>
+            
+            <div class="solutions-grid">
+                <div class="solution-card" data-aos="fade-up">
+                    <div class="solution-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Forecasting</h3>
+                    <p>Our proprietary deep learning models provide up to 72-hour pollution forecasts, enabling proactive responses to air quality issues before they impact communities.</p>
+                    <div class="solution-image">
+                        <img src="./Website pictures AireChemistry/Full Moon in Dark Night Sky.jpg" alt="Night monitoring capabilities">
+                    </div>
+                </div>
+                
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="solution-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3>Multi-Sensor Integration</h3>
+                    <p>Comprehensive environmental monitoring with 15+ integrated sensors measuring particulate matter, gases, weather conditions, smell, and noise in a single device.</p>
+                    <div class="solution-image">
+                        <img src="./Website pictures AireChemistry/industrial factory with smoke emissions aerial view in autumn.jpg" alt="Aerial view of industrial monitoring">
+                    </div>
+                </div>
+                
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="solution-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Innovative Alert System</h3>
+                    <p>Patent-pending coughing speaker technology combined with RGB strobe lights and vibration alerts ensure maximum community awareness during dangerous conditions.</p>
+                    <div class="solution-image">
+                        <img src="./Website pictures AireChemistry/factory-smoke-blending-with-fog-over-city.jpg" alt="Urban pollution monitoring">
+                    </div>
+                </div>
+                
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="solution-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <h3>Solar Powered & Autonomous</h3>
+                    <p>Independent operation with solar power and wireless connectivity via LTE, LoRa, or Wi-Fi. Deploy anywhere without infrastructure constraints.</p>
+                    <div class="solution-image">
+                        <img src="./Website pictures AireChemistry/Industrial Pollution and Power Lines at Sunset.jpg" alt="Power infrastructure and monitoring">
+                    </div>
+                </div>
+                
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="800">
+                    <div class="solution-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3>Sustainable Local Manufacturing</h3>
+                    <p>Proudly designed and assembled in South Africa with B-BBEE Level 1 certification, creating jobs and supporting local economic development.</p>
+                    <div class="solution-image">
+                        <img src="./Website pictures AireChemistry/ship-emitting-pollution-harbor.jpg" alt="Coastal monitoring applications">
+                    </div>
+                </div>
+                
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="solution-icon">
+                        <i class="fas fa-dashboard"></i>
+                    </div>
+                    <h3>Comprehensive Analytics</h3>
+                    <p>Advanced web and mobile dashboards providing real-time data, historical trends, predictive analytics, and automated reporting for stakeholders.</p>
+                    <div class="solution-image">
+                        <img src="./Website pictures AireChemistry/industrial-refinery-night-pollution.jpg" alt="24/7 monitoring capabilities">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Product Series</h2>
+                <p>Tailored solutions for every environmental monitoring requirement</p>
+            </div>
+            
+            <div class="products-showcase">
+                <div class="product-navigation">
+                    <button class="product-nav-btn active" data-product="p-series">P-Series</button>
+                    <button class="product-nav-btn" data-product="x-series">X-Series</button>
+                    <button class="product-nav-btn" data-product="z-series">Z-Series</button>
+                </div>
+                
+                <div class="product-details">
+                    <!-- P-Series -->
+                    <div class="product-detail active" id="p-series">
+                        <div class="product-content">
+                            <div class="product-info">
+                                <div class="product-badge">Essential Monitoring</div>
+                                <h3>P-Series</h3>
+                                <p class="product-description">
+                                    High-accuracy PM2.5 and PM10 particulate monitoring designed for basic air quality assessment. 
+                                    Perfect for educational institutions, residential developments, and commercial spaces requiring reliable environmental data.
+                                </p>
+                                
+                                <div class="product-features">
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>PM2.5 & PM10 Monitoring</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>Real-time Data Transmission</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>Basic Weather Integration</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>Mobile Dashboard Access</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-applications">
+                                    <h4>Ideal Applications:</h4>
+                                    <div class="application-tags">
+                                        <span class="tag">Schools</span>
+                                        <span class="tag">Residential Estates</span>
+                                        <span class="tag">Shopping Malls</span>
+                                        <span class="tag">Office Buildings</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- <button class="btn btn-primary">Request Specifications</button> -->
+                            </div>
+                            
+                            <div class="product-visual">
+                                <div class="product-image-stack">
+                                    <img src="./Website pictures AireChemistry/industrial plant with tall chimney emitting smoke in foggy weather.jpg" alt="P-Series monitoring application">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- X-Series -->
+                    <div class="product-detail" id="x-series">
+                        <div class="product-content">
+                            <div class="product-info">
+                                <div class="product-badge featured">Advanced Intelligence</div>
+                                <h3>X-Series</h3>
+                                <p class="product-description">
+                                    Comprehensive air quality monitoring combining particulate matter and gas detection with AI forecasting. 
+                                    Engineered for complex environments requiring detailed atmospheric analysis and predictive capabilities.
+                                </p>
+                                
+                                <div class="product-features">
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>Full Particulate & Gas Monitoring</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>72-Hour AI Forecasting</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>Multi-directional Sensing</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>Advanced Alert System</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-applications">
+                                    <h4>Ideal Applications:</h4>
+                                    <div class="application-tags">
+                                        <span class="tag">Hospitals</span>
+                                        <span class="tag">Industrial Facilities</span>
+                                        <span class="tag">Municipalities</span>
+                                        <span class="tag">Mining Operations</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- <button class="btn btn-primary">Request Specifications</button> -->
+                            </div>
+                            
+                            <div class="product-visual">
+                                <div class="product-image-stack">
+                                    <img src="./Website pictures AireChemistry/industrial oil refinery with smoke and storage tanks near coast.jpg" alt="X-Series advanced monitoring">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Z-Series -->
+                    <div class="product-detail" id="z-series">
+                        <div class="product-content">
+                            <div class="product-info">
+                                <div class="product-badge premium">Professional Grade</div>
+                                <h3>Z-Series</h3>
+                                <p class="product-description">
+                                    Industry-leading multi-directional monitoring capability measuring comprehensive particulate ranges from all compass directions. 
+                                    Designed for regulatory compliance, forensic investigations, and transboundary environmental disputes.
+                                </p>
+                                
+                                <div class="product-features">
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>360° Multi-directional Monitoring</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>Full Spectrum Particulate Analysis</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>Forensic-grade Data Logging</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>Regulatory Compliance Reporting</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-applications">
+                                    <h4>Ideal Applications:</h4>
+                                    <div class="application-tags">
+                                        <span class="tag">Regulatory Compliance</span>
+                                        <span class="tag">Forensic Investigations</span>
+                                        <span class="tag">Border Monitoring</span>
+                                        <span class="tag">Industrial Disputes</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- <button class="btn btn-primary">Request Specifications</button> -->
+                            </div>
+                            
+                            <div class="product-visual">
+                                <div class="product-image-stack">
+                                    <img src="./Website pictures AireChemistry/industrial-smoke-stacks-air-pollution-mountains.jpg" alt="Z-Series professional monitoring">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cutting-Edge Technology</h2>
+                <p>Patent-pending innovations backed by world-class scientific expertise</p>
+            </div>
+            
+            <div class="technology-showcase">
+                <div class="tech-feature" data-aos="fade-right">
+                    <div class="tech-content">
+                        <div class="tech-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Graph Neural Network Forecasting</h3>
+                        <p>Advanced AI models specifically designed for embedded edge deployment, providing accurate pollution forecasts up to 72 hours in advance with continuous learning capabilities.</p>
+                        <div class="tech-specs">
+                            <span class="spec">Edge Computing</span>
+                            <span class="spec">Real-time Processing</span>
+                            <span class="spec">Continuous Learning</span>
+                        </div>
+                    </div>
+                    <div class="tech-image">
+                        <img src="./Website pictures AireChemistry/industrial-smoke-emission-from-factory.jpg" alt="AI monitoring technology">
+                    </div>
+                </div>
+                
+                <div class="tech-feature reverse" data-aos="fade-left">
+                    <div class="tech-content">
+                        <div class="tech-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>Multi-Sensor Fusion Platform</h3>
+                        <p>Integrated sensor array monitoring CO, O3, NO2, SO2, PM1, PM2.5, PM10, VOC, smell, noise, GPS coordinates, humidity, atmospheric pressure, and temperature simultaneously.</p>
+                        <div class="tech-specs">
+                            <span class="spec">15+ Sensors</span>
+                            <span class="spec">Real-time Fusion</span>
+                            <span class="spec">GPS Integration</span>
+                        </div>
+                    </div>
+                    <div class="tech-image">
+                        <img src="./Website pictures AireChemistry/Factory Emissions and Power Lines under Hazy Sky.jpg" alt="Multi-sensor monitoring">
+                    </div>
+                </div>
+                
+                <div class="tech-feature" data-aos="fade-right">
+                    <div class="tech-content">
+                        <div class="tech-icon">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                        <h3>Patent-Pending Alert System</h3>
+                        <p>Revolutionary coughing speaker technology combined with RGB strobe lights and vibration alerts, ensuring maximum community awareness during hazardous air quality events.</p>
+                        <div class="tech-specs">
+                            <span class="spec">Audio Alerts</span>
+                            <span class="spec">Visual Indicators</span>
+                            <span class="spec">Haptic Feedback</span>
+                        </div>
+                    </div>
+                    <div class="tech-image">
+                        <img src="./Website pictures AireChemistry/urban-air-pollution-over-cityscape.jpg" alt="Community alert system">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>World-Class Expertise</h2>
+                <p>Elite scientific and engineering credentials driving environmental innovation</p>
+            </div>
+            
+            <div class="team-content">
+                <div class="team-leader">
+                    <div class="leader-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <div class="leader-info">
+                        <h3>Lotta Mayana</h3>
+                        <p class="leader-title">Lead Engineer & Founder</p>
+                        <div class="leader-roles">
+                            <span class="role-badge">Science Director</span>
+                            <span class="role-badge">Engineering Director</span>
+                            <span class="role-badge">Systems Director</span>
+                        </div>
+                        <p class="leader-bio">
+                            Leading a team of science professionals with active roles at NASA JPL and ASTM International. 
+                            Our directors bring over 15 years of combined experience from major energy corporations including 
+                            Chevron, Phillips 66, PBF Energy, and Bazan, with specialized expertise in atmospheric science 
+                            and environmental monitoring systems.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="credentials-section">
+                    <h3>Professional Credentials & Partnerships</h3>
+                    <div class="credentials-grid">
+                        <div class="credential-card">
+                            <i class="fas fa-rocket"></i>
+                            <h4>NASA JPL</h4>
+                            <p>Active Science Team Members</p>
+                        </div>
+                        <div class="credential-card">
+                            <i class="fas fa-industry"></i>
+                            <h4>ASTM International</h4>
+                            <p>Standards Development</p>
+                        </div>
+                        <div class="credential-card">
+                            <i class="fas fa-certificate"></i>
+                            <h4>SANAS & SABS</h4>
+                            <p>Accreditation & Standards</p>
+                        </div>
+                        <div class="credential-card">
+                            <i class="fas fa-university"></i>
+                            <h4>UNISA Partnership</h4>
+                            <p>Research Collaboration</p>
+                        </div>
+                        <div class="credential-card">
+                            <i class="fas fa-handshake"></i>
+                            <h4>SALGA</h4>
+                            <p>Municipal Partnerships</p>
+                        </div>
+                        <div class="credential-card">
+                            <i class="fas fa-award"></i>
+                            <h4>B-BBEE Level 1</h4>
+                            <p>Transformation Excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Air Quality Monitoring?</h2>
+                <p>Join leading organizations across Africa who trust AireChemistry for accurate, intelligent environmental monitoring solutions.</p>
+                
+                <div class="cta-stats">
+                    <div class="cta-stat">
+                        <span class="stat-number">72</span>
+                        <span class="stat-label">Hours Forecasting</span>
+                    </div>
+                    <div class="cta-stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Sensor Parameters</span>
+                    </div>
+                    <div class="cta-stat">
+                        <span class="stat-number">Level 1</span>
+                        <span class="stat-label">B-BBEE Certified</span>
+                    </div>
+                </div>
+                
+                <div class="cta-actions">
+                    <button class="btn btn-primary btn-large" onclick="scrollToSection('contact')">
+                        <i class="fas fa-rocket"></i>
+                        Start Your Project
+                    </button>
+                    <div class="cta-contact">
+                        <span>Or call us directly</span>
+                        <strong>+27 XX XXX XXXX</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Ready to Transform Air Quality Monitoring?</h2>
+                    <p>Connect with our team to discuss your environmental monitoring requirements and discover how AireChemistry can provide intelligent solutions for your organization.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <span>info@philanho.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <span>+27 XX XXX XXXX</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>South Africa</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="company-credentials">
+                        <div class="credential-row">
+                            <span><strong>CSD Supplier:</strong> MAAA1566365</span>
+                            <span><strong>Company Reg:</strong> 2025/078660/07</span>
+                        </div>
+                        <div class="credential-row">
+                            <span><strong>Tax Number:</strong> 9314111262</span>
+                            <span><strong>B-BBEE Level:</strong> Level 1</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" name="phone" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <select name="interest" required>
+                                    <option value="">Select Interest Area</option>
+                                    <option value="municipal">Municipality Solutions</option>
+                                    <option value="healthcare">Healthcare Facilities</option>
+                                    <option value="industrial">Industrial Monitoring</option>
+                                    <option value="education">Educational Institutions</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Tell us about your air quality monitoring requirements..." rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>AireChemistry</h3>
+                    <p>Transforming environmental monitoring through AI-powered innovation and world-class scientific expertise.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Solutions</h4>
+                        <ul>
+                            <li><a href="#products">P-Series</a></li>
+                            <li><a href="#products">X-Series</a></li>
+                            <li><a href="#products">Z-Series</a></li>
+                            <li><a href="#technology">Technology</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Industries</h4>
+                        <ul>
+                            <li><a href="#">Municipalities</a></li>
+                            <li><a href="#">Healthcare</a></li>
+                            <li><a href="#">Industrial</a></li>
+                            <li><a href="#">Education</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#team">Our Team</a></li>
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 AireChemistry by Phila Health (Pty) Ltd. All rights reserved.</p>
+                    <div class="footer-badges">
+                        <span class="badge">B-BBEE Level 1</span>
+                        <span class="badge">Made in South Africa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
