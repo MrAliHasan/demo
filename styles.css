@@ -1079,9 +1079,10 @@ section {
 }
 
 /* Team Section */
+/* Team Section */
 .team {
     padding: var(--space-2xl) 0;
-    background: var(--secondary-dark);
+    background: var(--surface-light);
 }
 
 .team-content {
@@ -1089,89 +1090,36 @@ section {
     gap: var(--space-2xl);
 }
 
-.team-grid {
+.team-leader {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--space-xl);
-    margin-bottom: var(--space-2xl);
-}
-
-.team-card {
+    grid-template-columns: 300px 1fr;
+    gap: var(--space-2xl);
+    align-items: center;
     background: var(--gradient-glass);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: var(--radius-xl);
-    padding: var(--space-lg);
-    text-align: center;
-    transition: all 0.3s ease;
+    padding: var(--space-2xl);
+    box-shadow: var(--shadow-md);
 }
 
-.team-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent-blue);
-    box-shadow: var(--shadow-lg);
-}
-
-.team-image {
-    position: relative;
+.leader-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: var(--space-md);
 }
 
 .image-placeholder {
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     background: var(--gradient-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 4rem;
     color: white;
     box-shadow: var(--shadow-lg);
-}
-
-.team-card h3 {
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: var(--space-sm);
-    color: var(--text-primary);
-}
-
-.team-role {
-    font-size: 1rem;
-    color: var(--accent-blue);
-    font-weight: 600;
-    margin-bottom: var(--space-sm);
-}
-
-.team-description {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
-
-.credentials-highlight {
-    background: var(--gradient-primary);
-    border-radius: var(--radius-xl);
-    padding: var(--space-2xl);
-    text-align: center;
-    color: white;
-}
-
-.credentials-content h3 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: var(--space-md);
-}
-
-.credentials-content p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .leader-info h3 {
@@ -1197,7 +1145,7 @@ section {
 
 .role-badge {
     padding: 0.5rem 1rem;
-    background: var(--surface-dark);
+    background: var(--surface-light);
     border: 1px solid var(--accent-purple);
     color: var(--accent-purple);
     border-radius: var(--radius-lg);
@@ -1384,19 +1332,19 @@ section {
 .contact-info > p {
     font-size: 1.2rem;
     color: var(--text-secondary);
-    margin-bottom: var(--space-xl);
+    /* margin-bottom: var(--space-xl); */
     line-height: 1.7;
 }
 
 .contact-details {
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-lg);
 }
 
 .contact-item {
     display: flex;
     align-items: center;
     gap: var(--space-md);
-    margin-bottom: var(--space-lg);
+    /* margin-bottom: var(--space-lg); */
     padding: var(--space-md);
     background: var(--gradient-glass);
     border-radius: var(--radius-md);
@@ -1502,9 +1450,22 @@ section {
 
 /* Footer */
 .footer {
-    background: var(--secondary-dark);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--surface-light);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding: var(--space-2xl) 0 var(--space-md);
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-glass);
+    backdrop-filter: blur(20px);
+    z-index: -1;
 }
 
 .footer-content {
@@ -1512,6 +1473,12 @@ section {
     grid-template-columns: 1fr 2fr;
     gap: var(--space-2xl);
     margin-bottom: var(--space-xl);
+    background: var(--gradient-glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: var(--radius-xl);
+    padding: var(--space-2xl);
+    box-shadow: var(--shadow-md);
 }
 
 .footer-brand h3 {
@@ -1539,8 +1506,8 @@ section {
 .social-links a {
     width: 40px;
     height: 40px;
-    background: var(--surface-dark);
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: var(--primary-light);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1548,6 +1515,7 @@ section {
     color: var(--text-secondary);
     text-decoration: none;
     transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
 }
 
 .social-links a:hover {
@@ -1587,7 +1555,7 @@ section {
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding-top: var(--space-md);
 }
 
@@ -1817,38 +1785,30 @@ section {
         direction: ltr;
     }
 
-    .team-grid {
+    .team-leader {
         grid-template-columns: 1fr;
         gap: var(--space-lg);
-    }
-
-    .team-card {
-        padding: var(--space-md);
-    }
-
-    .team-card h3 {
-        font-size: 1.2rem;
-    }
-
-    .team-role {
-        font-size: 0.9rem;
-    }
-
-    .team-description {
-        font-size: 0.85rem;
-    }
-
-    .credentials-highlight {
+        text-align: center;
         padding: var(--space-lg);
     }
 
-    .credentials-content h3 {
-        font-size: 1.5rem;
+    .image-placeholder {
+        width: 150px;
+        height: 150px;
+        font-size: 3rem;
     }
 
-    .credentials-content p {
+    .leader-info h3 {
+        font-size: 1.8rem;
+    }
+
+    .role-badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .leader-bio {
         font-size: 1rem;
-        text-align: left;
     }
 
     .contact-content {
