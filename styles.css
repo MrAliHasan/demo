@@ -77,9 +77,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--space-md);
+    width: 100%;
 }
 
 /* Loading Screen */
@@ -145,10 +145,10 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: var(--space-sm) 0;
-    max-width: 1200px;
     margin: 0 auto;
     padding-left: var(--space-md);
     padding-right: var(--space-md);
+    width: 100%;
 }
 
 .nav-brand h2 {
@@ -786,8 +786,8 @@ section {
 }
 
 .services-showcase {
-    max-width: 1000px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .service-navigation {
@@ -938,8 +938,8 @@ section {
 }
 
 .products-showcase {
-    max-width: 1000px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .product-navigation {
