@@ -79,7 +79,7 @@ body {
 .container {
     margin: 0 auto;
     padding: 0 var(--space-md);
-    width: 100%;
+    max-width: 1200px;
 }
 
 /* Loading Screen */
@@ -148,7 +148,7 @@ body {
     margin: 0 auto;
     padding-left: var(--space-md);
     padding-right: var(--space-md);
-    width: 100%;
+   max-width: 1350px;
 }
 
 .nav-brand h2 {
@@ -2184,8 +2184,15 @@ section {
 
     .service-content {
         grid-template-columns: 1fr;
-        padding: var(--space-lg);
-        gap: var(--space-lg);
+        padding: var(--space-md);
+        gap: var(--space-md);
+        max-width: none;
+    }
+
+    .service-info {
+        padding: var(--space-md);
+        max-width: none;
+        width: 100%;
     }
 
     .service-info h3 {
@@ -2195,29 +2202,47 @@ section {
     .service-description {
         font-size: 1rem;
         line-height: 1.6;
-        margin-bottom: var(--space-lg);
+        margin-bottom: var(--space-md);
+        max-width: none;
     }
 
     .service-features {
-        margin-bottom: var(--space-lg);
+        margin-bottom: var(--space-md);
     }
 
     .service-navigation {
         flex-direction: column;
         gap: var(--space-sm);
+        margin-bottom: var(--space-md);
     }
 
     .service-nav-btn {
-        padding: var(--space-md) var(--space-lg);
+        padding: var(--space-sm) var(--space-md);
+        margin-bottom: var(--space-xs);
     }
 
     .feature-item {
-        margin-bottom: var(--space-md);
+        margin-bottom: var(--space-sm);
         font-size: 0.95rem;
     }
 
     .application-tags {
         gap: var(--space-xs);
+        margin-top: var(--space-sm);
+        margin-bottom: var(--space-sm);
+    }
+
+    .service-visual {
+        min-height: 250px;
+        margin-top: var(--space-sm);
+    }
+
+    .service-image-stack {
+        height: 250px;
+    }
+
+    .service-image-stack img {
+        height: 250px;
     }
 
     .tag {
