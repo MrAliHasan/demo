@@ -9,6 +9,7 @@ class AireChemistryApp {
         this.setupNavigation();
         this.setupHeroSlideshow();
         this.setupProductNavigation();
+        this.setupServiceNavigation();
         this.setupScrollEffects();
         this.setupFormHandling();
         this.setupAnimations();
@@ -134,6 +135,30 @@ class AireChemistryApp {
                 productDetails.forEach(detail => {
                     detail.classList.remove('active');
                     if (detail.id === targetProduct) {
+                        detail.classList.add('active');
+                    }
+                });
+            });
+        });
+    }
+
+    // Service Navigation
+    setupServiceNavigation() {
+        const navBtns = document.querySelectorAll('.service-nav-btn');
+        const serviceDetails = document.querySelectorAll('.service-detail');
+
+        navBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetService = btn.getAttribute('data-service');
+                
+                // Update button states
+                navBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Update service displays
+                serviceDetails.forEach(detail => {
+                    detail.classList.remove('active');
+                    if (detail.id === targetService) {
                         detail.classList.add('active');
                     }
                 });
