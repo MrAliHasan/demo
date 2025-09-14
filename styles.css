@@ -2017,6 +2017,7 @@ section {
     
     .hero-subtitle {
         font-size: 1.1rem;
+        text-align: justify;
     }
     
     .hero-stats {
