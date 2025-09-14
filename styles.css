@@ -1159,6 +1159,31 @@ section {
     font-size: 1.1rem;
 }
 
+.leader-bio p {
+    margin-bottom: var(--space-md);
+}
+
+.leader-bio ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: var(--space-md);
+}
+
+.leader-bio ul li {
+    margin-bottom: var(--space-md);
+    padding-left: var(--space-lg);
+    position: relative;
+}
+
+.leader-bio ul li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    top: calc(0.1em + 3px);
+    color: var(--accent-blue);
+    font-size: 0.8rem;
+}
+
 .credentials-section {
     background: var(--gradient-glass);
     backdrop-filter: blur(20px);
@@ -1788,8 +1813,12 @@ section {
     .team-leader {
         grid-template-columns: 1fr;
         gap: var(--space-lg);
-        text-align: center;
+        text-align: left;
         padding: var(--space-lg);
+    }
+
+    .leader-image {
+        text-align: center;
     }
 
     .image-placeholder {
